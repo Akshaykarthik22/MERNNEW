@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        body{
+            background-color: rgb(144, 132, 0);
+            display:flex;
+            height: 80vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+                        
+background: #00bf8f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0d9d7b, #0d26ca);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #001510, #1735cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+        .form
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            display: flex;
+           flex-direction: column;
+            font-size: large;
+            text-decoration: dashed;
+            /* border-width: 2cap; */
+            border: 2px solid black;
+            padding: 50px;
+            text-align: center;
+            gap: 150px;
+            background-color: rgb(109, 116, 112);
+            border-radius:15%;
+           
+        
+        }
+        input{
+            border-radius:20px ;
+
+        }
+        .form:hover{
+            background-color: rgb(145, 150, 133);
+            box-shadow:
+  0.6px 3.4px 2.7px rgba(0, 0, 0, 0.093),
+  1.5px 8.7px 6.9px rgba(0, 0, 0, 0.133),
+  3px 17.7px 14.2px rgba(0, 0, 0, 0.167),
+  6.2px 36.5px 29.2px rgba(0, 0, 0, 0.207),
+  17px 100px 80px rgba(0, 0, 0, 0.3)
+        }
+        input:hover{
+            background-color: rgb(215, 212, 212);
+            box-shadow:
+  0.6px 3.4px 2.7px rgba(0, 0, 0, 0.093),
+  1.5px 8.7px 6.9px rgba(0, 0, 0, 0.133),
+  3px 17.7px 14.2px rgba(0, 0, 0, 0.167),
+  6.2px 36.5px 29.2px rgba(0, 0, 0, 0.207),
+  17px 100px 80px rgba(0, 0, 0, 0.3)
+  
+  
+        }
+        
+
+     </style>
+</head>
+<body>
+    <div class="form">
+        <h2>FORM🔧</h2>
+        <form onsubmit="newfunc(event)">
+    <label for="name">Enter Your Name</label><br><br>
+    <input type="text" id="name"><br><br>
+    <label for="email">Enter Your Email</label><br><br>
+    <input type="text" id="email"><br><br>
+    <label for="phn">Enter Your Mobile Number</label><br><br>
+    <input type="text" id="phn"><br><br>
+    <button type="submit">SUBMIT</button>
+    <p id="re"></p>
+    <!-- <input type="submit" class="sub"> -->
+</form>
+</div>
+ <script>
+     function newfunc(event)
+     {
+         event.preventDefault()
+        let name=document.getElementById("name");
+        // let re=document.getElementById("re");
+        re.textContent="Welcome "+name.value;
+        // ("hello"+event.name)
+        // document.write("hello")
+        // let name=document.getElementById("name").value;
+
+
+    }
+
+</script>
+
+    
+    
+</body>
+
+</html>
+
+

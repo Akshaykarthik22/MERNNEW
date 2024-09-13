@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>Document</title>
     <style>
         *{
@@ -15,8 +16,8 @@
             width: 100vw;
             background-color:#c5d5df;
             display: flex;
-
-            justify-content: center;
+            flex-direction: column;
+            justify-content:space-between;
             align-items: center;
 
         }
@@ -30,19 +31,24 @@
             height: 13rem;
             
 background: #00bf8f;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #001510, #00bf8f);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: -webkit-linear-gradient(to right, #001510, #000d50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #001510, #000d50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 ;
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content:space-around;
             align-items: center;
+            /* box-shadow:8.6px 13.6px 13px rgba(0, 0, 0, 0.105),
+  69px 109px 104px rgba(0, 0, 0, 0.21); */
+
         }
-        .profile-img{
-            height:50%;
-            width: 50%;
+        .profile-img-section{
+            height:16rem;
+            width: 16rem;
             display: flex;
             justify-content: center;
+            align-items: center;
+            
         }
         .profile-data{
             width: 40%;
@@ -50,13 +56,7 @@ background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, F
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
-        img{
-            width: 35%;
-            height: 20%;
-            border-radius: 50%;
-            flex-direction: row;
-            justify-content: end;
+            color:aliceblue
         }
         .section2{
             width:100%;
@@ -64,7 +64,7 @@ background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, F
             display: flex;
             flex-direction: column;
             justify-content: center;
-           align-items: center;
+           align-items:flex-start;
             border: 1px solid black;
         }
         .section3{
@@ -73,16 +73,16 @@ background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, F
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: start;
             border: 1px solid black;
         }
         .section-title{
-            color: rgb(12, 195, 140);
+            color: rgb(17, 0, 59);
         }
         .ed-table{
             width:70%;
             border: 1px solid black;
-            align-items: center;
+            align-items: start;
             /* border-collapse: collapse; */
         }
         table, th, td{
@@ -101,13 +101,15 @@ background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, F
 
         }
         .sample2{
-            width:20%;
+            width:75%;
             display:flex;
-            height:20%;
+            border-radius: 50%;
+            height:75%;
+            /* object-fit: cover; */
         }
         .sample3{
             justify-content: center;
-            align-items: center;
+            align-items: start;
             display:"flex";
             width:50%;
         }
@@ -115,14 +117,14 @@ background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, F
         {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: start;
         }
         .section4
         {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: start;
             border: 1px solid black;
             height:12%;
         }
@@ -130,15 +132,69 @@ background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, F
         {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            /*justify-content: center;*/
+             align-items: start; 
             border: 1px solid black;
         }
         li{
-            list-style: georgian;
+            list-style:square;
             margin-left: 2rem;
             
         }
+        .section6
+        {
+            width:80%;
+            background-color: #000d50;
+            height:5vh;
+            display:flex;
+            justify-content: center;
+            align-items: start;
+            gap:22px;
+            border-radius:5px;
+        }
+        .icon1
+        {
+            color:rgb(255, 255, 255);
+            /* border-radius: 2px; */
+        }
+
+        .icon2
+        {
+            color:rgb(255, 255, 255);
+            /* border-radius: 2px; */
+        }
+
+        .icon3
+        {
+            color:rgb(255, 255, 255);
+            /* border-radius: 2px; */
+        }
+        
+*::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar
+{
+	width: 10px;
+    height: 1px;
+	background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb
+{
+	background-color: rgb(0, 0, 0);	
+	background-image: -webkit-linear-gradient(90deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
 
     </style>
 </head>
@@ -146,7 +202,7 @@ background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, F
     <div class="container">
          <div class="section1">
          <div class="profile-img-section"> 
-             <img src="https://i.pinimg.com/564x/44/a9/b9/44a9b9ce27e6f55f4401054de2f52ebc.jpg" alt="AKSHAY(iron man)" class="sample2">
+             <img src="https://avatars.githubusercontent.com/u/132335666?v=4" alt="AKSHAY(iron man)" class="sample2">
          </div>
          <div class="profile-data">
              <h1>Akshay Karthik S</h1>
@@ -157,7 +213,7 @@ background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, F
          <h1 class="section-title">
              Objective
          </h1>
-         <p>Third-year Computer Science Engineering student with hands-on experience in AI/ML, web development, and software projects. Completed multiple internships, built innovative applications, and developed proficiency in Python, Java, and SQL. Actively pursuing an MS in Computer Science with a focus on cutting-edge research and technology.</p>
+         <p>Third-year Computer Science Engineering student with hands-on experience in AI/ML, web development, and software projects. Completed multiple internships, built innovative applications, and developed proficiency in Python, Java, and SQL. Skilled in developing data-driven solutions and leveraging machine learning algorithms to address complex challenges. Actively pursuing an MS in Computer Science with a focus on cutting-edge research and technology, aiming to contribute to advancements in artificial intelligence and software development.</p>
         </div>
         <div class="section3">
          <h1 class="section-title">
@@ -195,14 +251,14 @@ background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, F
         <div class="section4">
          <h1 class="section-title">Internships</h1>
          <p>
-             <span class="companies">Data Engineer at Hash Agile technologies AUGUST 2024 - 
+             <span class="companies"><b>Data Engineer at Hash Agile technologies AUGUST 2024</b> - 
                 
                  Worked on Snowflake SQL software to store and retrieve company data. Also showcased good managerial skills by leading a team of 4 on project Completion
              </span>
          </p>
          <br>
          <p>
-             <span class="companies">AI developing intern at RAID technologies SEPTEMBER 2024 - 
+             <span class="companies"><b>AI developing intern at RAID technologies SEPTEMBER 2024</b> - 
                 
                  Lead a team of 5 on developing AI solutions using various ML Algorithms. Also showcased good teamwork skills by completing 4 primary tasks on python web development
      
@@ -221,7 +277,12 @@ background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, F
             </ul>
         </div>
     </div>
-
+    <div class="section6">
+        <a href="tel:+7010160414"><i class="fa-solid fa-phone icon1"></i></a>
+        <a href="mailto:jsakshaykarthik@gmail.com"><i class="fa-solid fa-envelope icon2" aria-hidden="true"></i></a>
+        <a href="http://www.linkedin.com/in/akshay-karthik-s-041a26253/" target="_blank"><i class="fa-brands fa-linkedin icon3"></i></a>
+        <a href="" class="href"></a>
+    </div>
 </body>
 </html>
 
@@ -232,127 +293,3 @@ background: linear-gradient(to right, #001510, #00bf8f); /* W3C, IE 10+/ Edge, F
 
 
 
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            margin:0px;
-            padding:0px;
-        }
-        body{
-            height:100vh;
-            width:100vw;
-            background:#f5f5f5; 
-            display:flex; 
-            flex-direction:column;
-            justify-content:center;
-            align-items:center;
-        }
-        .section1{
-          height:12rem;
-          width:70%;
-          background:aquamarine;  
-          display:flex;
-          flex-direction:row;
-          justify-content:center;
-          align-items:center;
-      }
-      .profile-img-section{
-        height:30%;
-        width:40%;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-    }
-    .profile-data
-    {
-      width:40%;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-    }
-    .profile-img{
-      height:8rem;
-      width:8rem;
-      border-radius:50%;
-    }
-    .section2
-    {
-       width:70%;
-       height:12rem;
-       border:1px solid aquamarine;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:start;
-    }
-    .section3
-    {
-      width:70%;
-      height:12rem;
-      border:1px solid aquamarine;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:start;
-    }
-    .section-title
-    {
-      color:aquamarine;
-      font-weight: bold;
-    }
-    .ed-title
-    {
-      width:100%;
-      border:1px solid;
-      border-collapse:collapse;
-    }
-    th,td{
-      padding:2px;
-      border:1px solid;
-    }
-    </style>
-  </head>
-  <body>
-   <div class="section1">
-    <div class="profile-img-section">
-        <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg" alt="doggy" class="profile-img">
-    </div>
-    <div class="profile-data">
-       <h1>Darsini C S</h1>
-       <h3>darsiniselvaraj@gmail.com</h3>
-    </div>
-   </div>
-   <div class="section2">
-    <h1 class="section-title">Objective</h1>
-    <p>I am Darsini.Currently,pusuing Computer Science Engineering.</p>
-   </div>
-   <div class="section3">
-    <h1 class="section-title">Education</h1>
-   <table class="ed-title">
-    <tr>
-      <th>Degree</th>
-      <th>Campus</th>
-      <th>Score</th>
-    </tr>
-    <tr>
-      <td>Day1</td>
-      <td>School</td>
-      <td>85%</td>
-    <tr>
-      <td>Day2</td>
-      <td>School</td>
-      <td>90%</td>
-    </tr>
-   </table>
-   </div>
-   <div class="section4"></div>
-   <div class="section5"></div>
-  </body>
-</html> -->
